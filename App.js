@@ -9,15 +9,14 @@ const Stack = createNativeStackNavigator()
 
 export default function App() {
   return (
-    // <View style={styles.container}>
-      <NavigationContainer>
+      <NavigationContainer onReady={() => console.log('Ready')}>
         <Stack.Navigator>
           <Stack.Screen name="Tab" component={TabNavigation} options={{ headerShown: false }} />
           {/* <Stack.Screen name="Evaluate day" component={EvaluateDayScreen} /> */}
           {/* <Stack.Screen name="Settings" component={SettingsScreen} /> */}
         </Stack.Navigator>
+        
     </NavigationContainer>
-    // </View>
   );
 }
 

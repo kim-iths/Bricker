@@ -30,10 +30,10 @@ const TabNavigation = () => {
                     style={{
                         width: size,
                         height: size,
-                        tintColor: focused ? colors.GREEN : "gray"
+                        tintColor: focused ? colors.BLUE : "gray"
                     }} />
             },
-            tabBarActiveTintColor: colors.GREEN,
+            tabBarActiveTintColor: colors.BLUE,
             tabBarInactiveTintColor: "gray",
 
         })}>
