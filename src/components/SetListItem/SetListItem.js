@@ -22,7 +22,7 @@ const SetListItem = ({ set, onPress }) => {
                         <Text style={{ marginTop: "auto", color:"gray" }}>{`#${set.num} - ${set.pcs} pcs`}</Text>
 
                     </View>
-                    <Image source={images.example} style={{ height: imageSize, width: imageSize, resizeMode: "contain", borderRadius: 8, }} />
+                    <Image source={set.image} style={{ height: imageSize, width: imageSize, resizeMode: "contain", borderRadius: 8, }} />
 
                 </View>
             </TouchableNativeFeedback>
